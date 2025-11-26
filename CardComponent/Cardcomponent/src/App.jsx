@@ -1,5 +1,7 @@
 
 import Card from "./Card.jsx";
+import "./app.css";
+import "./index.css";
 
 function App(){
 
