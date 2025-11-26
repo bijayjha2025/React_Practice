@@ -36,6 +36,25 @@ function App(){
      
     return(
     <>
+      <div>
+         <header>
+         <h1>Our Team</h1>
+         <p>Know about our best players, guiding our company towards growth</p>
+         </header>
+        <div>
+          {
+            teamMembers.map(member =>(
+              <Card
+              key={member.id}
+              name={member.name}
+              position={member.position}
+              description={member.description}
+              imageUrl={member.imageUrl}
+              />
+            ))}
+
+        </div>
+      </div>
     
     </>
   );
