@@ -1,5 +1,5 @@
 
-.cardContainer{
+.cardHolder{
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -8,7 +8,14 @@
     margin: 20px;
     margin: 10px;
     border: 1px solid rgb(239, 235, 235);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+}
+
+.cardHolder:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .cardImage{
@@ -21,9 +28,30 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cardHolder:hover .cardImage img{
+    transform: scale(1.05);
 }
 
 .cardContent{
+    padding: 10px;
     text-align: center;
-    padding: 15px;
+}
+
+.name{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.nickname{
+  color: beige;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.description{
+  line-height: 1.4;
+  text-align: left;
 }

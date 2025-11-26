@@ -2,7 +2,7 @@
 function Card({name, nickname, description, imageUrl}){
     return(
         <>
-        <div className="cardContainer">
+        <div className="cardHolder">
             <div className="cardImage">
                 <img src={imageUrl} alt={name} />
             </div>
