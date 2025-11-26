@@ -36,12 +36,12 @@ function App(){
      
     return(
     <>
-      <div>
-         <header>
+      <div className="appContainer">
+         <header className="appHeader">
          <h1>Our Team</h1>
          <p>Know about our best players, guiding our company towards growth</p>
          </header>
-        <div>
+        <div className="cardContainer">
           {
             teamMembers.map(member =>(
               <Card
