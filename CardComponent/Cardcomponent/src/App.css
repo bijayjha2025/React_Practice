@@ -10,3 +10,34 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: rgb(247, 230, 230);
 }
+
+.appContainer{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.appHeader{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.appHeader h1{
+  font-size: 1.5rem;
+  color: rgb(21, 18, 18);
+  margin-bottom: 10px;
+
+}
+
+.appHeader p{
+  font-size: 1.2rem;
+  color: hsl(0, 1%, 36%);
+}
+
+.cardContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
