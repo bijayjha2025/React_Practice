@@ -1,5 +1,5 @@
 
-function Card({name, position, description, imageUrl}){
+function Card({name, nickname, description, imageUrl}){
     return(
         <>
         <div className="cardContainer">
@@ -8,7 +8,7 @@ function Card({name, position, description, imageUrl}){
             </div>
             <div className="cardContent">
                 <h3 className="name">{name}</h3>
-                <p className="position">{position}</p>
+                <p className="nickname">{nickname}</p>
                 <p className="description">{description}</p>
             </div>
         </div>
