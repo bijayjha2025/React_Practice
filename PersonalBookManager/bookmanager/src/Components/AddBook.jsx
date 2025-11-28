@@ -23,7 +23,6 @@ const AddBook = ({onAddBook})=> {
       author,
       genre,
       notes,
-      coverUrl,
       isFavorite: false,
       isRead: false,
     };
@@ -57,12 +56,6 @@ const AddBook = ({onAddBook})=> {
         placeholder="Genre"
         value={genre}
         onChange={(e) => setGenre(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Cover Image URL"
-        value={coverUrl}
-        onChange={(e) => setCoverUrl(e.target.value)}
       />
       <textarea
         placeholder="Notes"
