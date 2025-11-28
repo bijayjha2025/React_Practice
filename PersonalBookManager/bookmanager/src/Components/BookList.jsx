@@ -10,7 +10,7 @@ const BookList = ({books, onToggleFavorite, onToggleRead, onDelete}) =>{
 
     return(
         <>
-        <div>{
+        <div className="bookList">{
             books.map((book) => (
                 <BookCard
                 key={book.id}

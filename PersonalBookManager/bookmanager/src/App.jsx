@@ -3,6 +3,9 @@ import React, {useState} from 'react'
 import AddBook from "./Components/AddBook.jsx"
 import BookList from "./Components/BookList.jsx"
 import BookCard from './Components/BookCard.jsx';
+import "./Styles/AddBook.css"
+import "./Styles/App.css"
+import "./Styles/BookCard.css"
 
 const App = () => {
   const [books, setBooks] = useState([]);
@@ -35,7 +38,7 @@ const App = () => {
    return (
     <>
     <div>
-      <h1>My Book Collection</h1>
+      <h1 className='mainHeading'>My Book Collection</h1>
       <AddBook onAddBook = {handleAddBook}/>
       <BookList
       books = {books}

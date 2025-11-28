@@ -1,0 +1,64 @@
+.bookCard {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 16px;
+  border-left: 6px solid #ffd495;
+  box-shadow: 0 6px 14px rgba(255, 188, 142, 0.2);
+  transition: 0.3s ease;
+}
+
+.bookCard:hover {
+  transform: scale(1.02);
+}
+
+
+.bookCard img {
+  display: block;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.bookCardControls {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.toggleReadButton {
+  padding: 10px 14px;
+  background: #b2f7b8;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.toggleReadButton:hover {
+  background: #81e690;
+}
+
+.toggleFavoriteButton {
+  padding: 10px 14px;
+  background: #ffe8a1;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.toggleFavoriteButton:hover {
+  background: #ffdb6e;
+}
+
+.deleteButton {
+  padding: 10px 14px;
+  background: #ffb6b6;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.deleteButton:hover {
+  background: #ff8b8b;
+}

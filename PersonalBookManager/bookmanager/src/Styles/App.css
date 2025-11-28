@@ -1,0 +1,30 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7f9fc;
+  padding: 30px;
+  color: #333;
+}
+
+
+.mainHeading{
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2.2rem;
+  color: hsl(228, 92%, 63%);
+  font-weight: 700;
+}
+
+.bookList{
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    margin: 0 auto;
+    gap: 20px;
+}
