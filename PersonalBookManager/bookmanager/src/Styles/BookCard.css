@@ -1,32 +1,69 @@
 .bookCard {
-  background: #ffffff;
-  padding: 18px;
-  border-radius: 16px;
-  border-left: 6px solid #ffd495;
+  background: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 18px;
+  border-left: 6px solid rgb(255, 212, 149);
   box-shadow: 0 6px 14px rgba(255, 188, 142, 0.2);
   transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.bookCard::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,219,88,0.22), transparent 50%);
+  transform: rotate(25deg);
+  transition: 0.4s ease;
+  opacity: 0;
+}
+
+.bookCard:hover::before {
+  opacity: 1;
 }
 
 .bookCard:hover {
-  transform: scale(1.02);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-
 .bookCard img {
-  display: block;
-  margin-top: 10px;
-  border-radius: 8px;
+  margin-top: 12px;
+  border-radius: 10px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
 .bookCardControls {
   display: flex;
-  gap: 10px;
-  margin-top: 12px;
+  gap: 12px;
+  margin-top: 16px;
 }
 
-.toggleReadButton {
+.toggleReadButton,
+.toggleFavoriteButton,
+.deleteButton {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.toggleReadButton
+
+
+
+{
   padding: 10px 14px;
-  background: #b2f7b8;
+  background: hsl(125, 81%, 83%);
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -34,12 +71,12 @@
 }
 
 .toggleReadButton:hover {
-  background: #81e690;
+  background: hsl(129, 67%, 70%);
 }
 
 .toggleFavoriteButton {
   padding: 10px 14px;
-  background: #ffe8a1;
+  background: hsl(45, 100%, 82%);
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -47,12 +84,12 @@
 }
 
 .toggleFavoriteButton:hover {
-  background: #ffdb6e;
+  background: hsl(45, 100%, 72%);
 }
 
 .deleteButton {
   padding: 10px 14px;
-  background: #ffb6b6;
+  background: hsl(0, 100%, 86%);
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -60,5 +97,5 @@
 }
 
 .deleteButton:hover {
-  background: #ff8b8b;
+  background: hsl(0, 100%, 77%);
 }
