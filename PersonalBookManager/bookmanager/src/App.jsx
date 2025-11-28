@@ -1,7 +1,7 @@
 
 import React, {useState} from 'react'
-import Addbook from "./Components/AddBook.jsx"
-import Booklist from "./Components/BookList.jsx"
+import AddBook from "./Components/AddBook.jsx"
+import BookList from "./Components/BookList.jsx"
 
 const App = () => {
   const [books, setBooks] = useState([]);
@@ -33,10 +33,18 @@ const App = () => {
 
    return (
     <>
-     <Addbook></Addbook>
-     <Booklist></Booklist>
+    <div>
+      <h1>My Book Collection</h1>
+      <AddBook onAddBook = {handleAddBook}/>
+      <BookList
+      books = {books}
+      onToggleFavorite = {handleToggleFavorite}
+      onToggleRead = {handleToggleRead}
+      onDelete = {handleDeleteBook}/>
+    </div>
+    
     </>
-  )
+  );
 
   };
 
