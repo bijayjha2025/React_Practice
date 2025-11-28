@@ -7,6 +7,8 @@ const genreColors = {
   SciFi: "rgba(16, 185, 129, 1)",
   Mystery: "rgba(139, 92, 246, 1)",
   Biography: "rgba(249, 115, 22, 1)",
+  Finance: "rgba(134, 159, 240, 1)",
+  Productivity: "rgba(195, 232, 31, 1)",
   Default: "rgba(107, 114, 128, 1)"
 };
 
