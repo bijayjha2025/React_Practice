@@ -1,6 +1,6 @@
 
 import React, {useState} from 'react'
-import Navbar from './Navbar.jsx'
+import Navbar from './Components/Navbar.jsx'
 import Sidebar from './Components/Sidebar.jsx'
 import Content from './Components/Content.jsx'
 import Layout from './Components/Layout.jsx'
@@ -8,7 +8,7 @@ import Layout from './Components/Layout.jsx'
 
 function App() {
 
-  const [selected, setSelected] = useState("Dasgboard");
+  const [selected, setSelected] = useState("Dashboard");
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const menuItems = ["Dashboard", "Users", "Settings"];
@@ -17,11 +17,11 @@ function App() {
     <>
     <Layout>
       <Navbar
-        title="myReactApp"
+        title="ReactLearning"
         onToggleSidebar = {() => setSidebarOpen(!sidebarOpen)}
         sidebarOpen = {sidebarOpen}/>
 
-        <div>
+        <div className='mainContainer'>
           <Sidebar
           items= {menuItems}
           onSelect= {setSelected}

@@ -2,8 +2,8 @@
 function Navbar({title, onToggleSidebar, sidebarOpen}){
     return(
         <>
-        <div>
-            <div>
+        <div className="mainNavBar">
+            <div className="navBarContent">
                 <div>
                     <button onClick={onToggleSidebar}>
                         {sidebarOpen ? "✕" : "☰"}
