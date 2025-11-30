@@ -1,7 +1,7 @@
 
 function Layout({ children }) {
   return (
-    <div>
+    <div className="layoutContainer">
       {children}
     </div>
   );
