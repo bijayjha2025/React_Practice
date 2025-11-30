@@ -4,15 +4,15 @@ function Navbar({title, onToggleSidebar, sidebarOpen}){
         <>
         <div className="mainNavBar">
             <div className="navBarContent">
-                <div>
-                    <button onClick={onToggleSidebar}>
+                <div className="navBarModes">
+                    <button onClick={onToggleSidebar} className="menuButtons">
                         {sidebarOpen ? "✕" : "☰"}
                     </button>
-                    <h1>{title}</h1>
+                    <h1 className="navBarTitle">{title}</h1>
                 </div>
-                <div>
-                    <span>Welcome, User!</span>
-                    <button>Login</button>
+                <div className="navBarRight">
+                    <span className="textMessage">Welcome, Guest!</span>
+                    <button className="loginButton">Login</button>
                 </div>
             </div>
         </div>

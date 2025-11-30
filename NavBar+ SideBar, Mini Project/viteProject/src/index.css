@@ -18,3 +18,56 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.navBarModes{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.navBarRight{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.navBarTitle{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.menuButtons{
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: rgb(3, 128, 3);
+    color: white;
+    font-size: 20px;
+}
+
+.menuButtons:hover{
+    background-color: rgb(3, 130, 3);
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.loginButton{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: rgb(3, 128, 3);
+    color: white;
+    cursor: pointer;
+}
+
+.loginButton:hover{
+    background-color: rgb(3, 130, 3);
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.textMessage{
+    font-size: 18px;
+}
