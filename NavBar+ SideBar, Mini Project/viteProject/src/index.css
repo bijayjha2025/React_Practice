@@ -47,12 +47,19 @@
     background-color: rgb(3, 128, 3);
     color: white;
     font-size: 20px;
+    transition: background-color 0.2s ease;
 }
 
 .menuButtons:hover{
     background-color: rgb(3, 130, 3);
     box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
+
+.menuButtons:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
 
 .loginButton{
     padding: 8px 12px;
@@ -62,11 +69,17 @@
     background-color: rgb(3, 128, 3);
     color: white;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .loginButton:hover{
     background-color: rgb(3, 130, 3);
     box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.loginButton:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
 }
 
 .textMessage{
@@ -131,6 +144,12 @@
 
 .menuItemButton:active {
   background-color: rgb(15, 151, 15);
+  font-weight: 600;
+}
+
+.menuItemButton:focus {
+  outline: 2px solid white;
+  outline-offset: -2px;
 }
 
 /* Content styling */
@@ -162,6 +181,11 @@
     margin-bottom: 24px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 .cardTitle{
