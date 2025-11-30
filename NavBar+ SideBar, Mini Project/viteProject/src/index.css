@@ -5,12 +5,13 @@
     overflow: hidden;
 }
 
+/* Navbar Styling */
+
 .mainNavBar{
     background-color: rgb(3, 128, 3);
     color: rgb(246, 235, 235);
     padding: 16px;
-    border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navBarContent{
@@ -70,4 +71,64 @@
 
 .textMessage{
     font-size: 18px;
+}
+
+/* SideBar Styling */
+
+.sidebar{
+  background-color: #013401;
+  color: white;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+
+.sideBarClosed{
+    width: 0;
+    padding: 0;
+}
+
+.sideBarOpened{
+    width: 250px;
+    padding: 20px;
+}
+
+.sideBarTitle{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.menuList{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuItem{
+    margin-bottom: 8px;
+}
+
+.menuItemButton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    background-color: transparent;
+    transition: background-color 0.2s;
+}
+
+.menuItemButton:hover {
+  background-color: rgb(3, 122, 3);
+}
+
+.menuItemButton:active {
+  background-color: rgb(15, 151, 15);
 }

@@ -1,24 +1,25 @@
 
-function Sidebar({items, onSelect, selected, isOpen}){
-
-    if(!isOpen){
-        return <aside> </aside>
-    }
+function Sidebar({items, onSelect, selected, isOpen}) {
 
     return (
-         <aside>
-          <h2>Menu</h2>
-
+    <aside className= {`sidebar ${isOpen ? "sideBarOpened" : "sideBarClosed"}`}>
+      {isOpen && (
+        <>
+          <h2 className="sideBarTitle">Menu</h2>
+          <ul className="menuList">
             {items.map((item) => (
-              <li key={item}>
+              <li className="menuItem" key={item}>
                 <button
-                  onClick={() => onSelect(item)}>
-                  {selected === item ? '>' : ""} {item}
+                  onClick={() => onSelect(item)}
+                  className={`menuItemButton ${selected === item ? 'active' : ""}`}>{item}
                 </button>
               </li>
             ))}
-        </aside>
-  );
+          </ul>
+        </>
+      )}
+    </aside>
+    );
 }
 
 export default Sidebar;
