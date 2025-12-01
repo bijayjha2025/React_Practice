@@ -1,16 +1,19 @@
-# React + Vite
+# React + Vite      # Navbar + Sidebar Layout
+This is a small React project I built to practice and strengthen the skills I've learned so far in React. It's a simple UI layout with a Navbar and Sidebar, where I experimented with components, state, event handling, and other React concepts.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+What I Learned / Practiced
+1. React Components: Breaking the UI into reusable and manageable components.
+2. State Management: Using useState to handle inputs, toggles, and interactions.
+3. Event Handling: Handling clicks, input changes, and other user actions.
+4. Props Passing: Sending data between parent and child components.
+5. Project Structure: Organizing folders and files in a clean, maintainable way.
+6. Vite Setup: Using Vite as the development environment for fast builds and easy setup.
 
-Currently, two official plugins are available:
+Features
+1. Simple Navbar and Sidebar layout
+2. Basic input handling and event interactions
+3. Clean folder structure demonstrating component-based architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Notes
+This project is simple and not meant to be a full product — the main goal was practice and learning.
+I wanted to challenge myself to use all the concepts I’ve learned in React up to this point.
