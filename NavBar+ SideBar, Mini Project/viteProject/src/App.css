@@ -1,1 +1,94 @@
 
+/* dark mode */
+
+.dark .mainNavBar{
+  background-color: #0b2d0b;
+  color: #e2e8f0;
+}
+
+.dark .menuButtons{
+  background-color: #0b2d0b;
+  color: #e2e8f0;
+}
+
+
+.dark .loginButton {
+  background-color: #0b2d0b;
+  color: white;
+  border: 1px solid #1a471a;
+}
+
+.dark .sidebar {
+  background-color: #001a00;
+}
+
+.dark .sideBarTitle {
+  color: #d1fae5;
+}
+
+.dark .menuItemButton {
+  color: #d1fae5;
+}
+
+.dark .menuItemButton:hover {
+  background-color: #064e3b;
+}
+
+.dark .menuItemButton.active {
+  background-color: #047857;
+  color: white;
+}
+
+.dark .content {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+.dark .card {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.dark .card:hover {
+  box-shadow: 0 6px 14px rgba(0,0,0,0.5);
+}
+
+.darkModeToggle {
+  padding: 8px 16px;
+  background-color: rgb(3, 128, 3);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.darkModeToggle:hover{
+    background-color: rgb(3, 128, 3);
+    color: white;
+    background-color: transparent;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.darkModeToggle:active{
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.dark .darkModeToggle {
+  background-color: rgb(20, 50, 20);
+  color: #e2e8f0;
+}
+
+.dark .loginButton,
+.dark .darkModeToggle {
+  background-color: #0b2d0b;
+  color: #e2e8f0;
+}
+
+.dark .loginButton:hover,
+.dark .darkModeToggle:hover {
+  background-color: #064e3b;
+}

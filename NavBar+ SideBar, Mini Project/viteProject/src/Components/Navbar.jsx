@@ -1,5 +1,5 @@
 
-function Navbar({title, onToggleSidebar, sidebarOpen}){
+function Navbar({title, onToggleSidebar, sidebarOpen, darkMode, onToggleDarkMode}){
     return(
         <>
         <div className="mainNavBar">
@@ -10,9 +10,14 @@ function Navbar({title, onToggleSidebar, sidebarOpen}){
                     </button>
                     <h1 className="navBarTitle">{title}</h1>
                 </div>
-                <div className="navBarRight">
+
+                <div clasName="navBarRight">
                     <span className="textMessage">Welcome, Guest!</span>
                     <button className="loginButton">Login</button>
+
+                    <button className="darkModeToggle" onClick={onToggleDarkMode}>
+                    {darkMode ? "🌙" : "☀"}
+                    </button>
                 </div>
             </div>
         </div>
