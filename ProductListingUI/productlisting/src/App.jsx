@@ -10,14 +10,6 @@ import EmptyState from './Components/EmptyState'
 
 function App() {
 
-  const [productsData] = useState(products);
-  const [filteredProducts, setFilteredProducts] = useState(products);
-  const [searchValue, setSearchValue] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("");
-  const [loading, setLoading] = useState(false);
-
-
-
   return (
     <>
       

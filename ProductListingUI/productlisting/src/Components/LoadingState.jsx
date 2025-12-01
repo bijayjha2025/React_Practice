@@ -2,6 +2,7 @@
 function LoadingState(){
     return(
         <>
+        <p>Loading Products..</p>
         </>
     )
 }
