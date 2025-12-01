@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard.jsx"
 function ProductList({products}){
     return(
         <>
-         <div>
+         <div className="productGrid">
             {products.map((p)=>
               (<ProductCard key={p.id} product={p}/>
             ))}

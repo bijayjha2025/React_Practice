@@ -2,8 +2,8 @@
 function FilterBar({onCategoryChange}){
     return(
         <>
-        <div>
-            <select onChange={(e) => onCategoryChange(e.target.value)}>
+        <div className="filterBar">
+            <select className= "filterBarSelect" onChange={(e) => onCategoryChange(e.target.value)}>
                 <option value="">All categories</option>
                 <option value="electronics">Electronics</option>
                 <option value="fashion">Fashion</option>

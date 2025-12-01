@@ -2,7 +2,7 @@
 function EmptyState(){
     return(
         <>
-        <p>No products found!</p>
+        <p className="emptyState">No products found!</p>
         </>
     );
 }

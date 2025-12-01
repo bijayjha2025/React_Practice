@@ -2,7 +2,7 @@
 function LoadingState(){
     return(
         <>
-        <p>Loading Products..</p>
+        <p className="loadingState">Loading Products..</p>
         </>
     )
 }

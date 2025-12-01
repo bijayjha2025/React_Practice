@@ -6,7 +6,7 @@ import ProductList from './Components/ProductList'
 import LoadingState from './Components/LoadingState'
 import EmptyState from './Components/EmptyState'
 import ProductCard from "./Components/ProductCard.jsx";
-
+import './App.css'
 
 
 function App() {
@@ -53,8 +53,8 @@ function App() {
 
   return (
     <>
-      <div>
-      <h1>Product Listing</h1>
+      <div className="appContainer">
+      <h1  className="appTitle">Product Listing</h1>
 
       <SearchBar onSearchChange={handleSearch} />
       <FilterBar onCategoryChange={handleCategory} />
