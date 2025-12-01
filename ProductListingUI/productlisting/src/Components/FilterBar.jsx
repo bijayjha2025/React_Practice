@@ -1,9 +1,9 @@
 
-function FilterBar({onCategory}){
+function FilterBar({onCategoryChange}){
     return(
         <>
         <div>
-            <select onChange={(e) => onCategory(e.target.value)}>
+            <select onChange={(e) => onCategoryChange(e.target.value)}>
                 <option value="">All categories</option>
                 <option value="electronics">Electronics</option>
                 <option value="fashion">Fashion</option>
@@ -13,7 +13,7 @@ function FilterBar({onCategory}){
                 <option value="sports">Sports</option>
                 <option value="beauty">Beauty</option>
                 <option value="toys">Toys</option>
-                <option value="Staionery">Stationery</option>
+                <option value="Stationery">Stationery</option>
 
 
             </select>
