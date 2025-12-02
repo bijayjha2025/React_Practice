@@ -13,7 +13,7 @@ function FilterBar({onCategoryChange}){
                 <option value="sports">Sports</option>
                 <option value="beauty">Beauty</option>
                 <option value="toys">Toys</option>
-                <option value="Stationery">Stationery</option>
+                <option value="stationery">Stationery</option>
 
 
             </select>
