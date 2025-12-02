@@ -7,6 +7,7 @@ import LoadingState from './Components/LoadingState'
 import EmptyState from './Components/EmptyState'
 import ProductCard from "./Components/ProductCard.jsx";
 import './App.css'
+import './index.css'
 
 
 function App() {

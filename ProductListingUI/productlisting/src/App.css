@@ -1,27 +1,39 @@
 
 .appContainer{
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
-    max-width: 900px;
-    font-family: Arial;
+    max-width: 1200px;
 }
 
 .appTitle{
     text-align: center;
     margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    color: hsl(0, 0%, 20%);
 }
 
 .searchBar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
 }
 
 .searchBarInput{
-    width: 60%;
-    padding: 10px;
-    font-size: 16px;
+    width: 260px;
+    padding: 10px 14px;
+    font-size: 15px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
+    border-radius: 8px;
+    outline: none;
+    transform: 0.2s ease;
+}
+
+.searchBarInput:Focus{
+    border-color: hsl(239, 84%, 67%);
+    box-shadow: 0 0 0 3px hsl(228, 96%, 89%);
 }
 
 .filterBar{
@@ -29,36 +41,53 @@
     margin-bottom: 20px;
 }
 
-.filterBarSearch{
-    font-size: 16px;
-    padding: 8px;
-    border-radius: 6px;
-    border: 1px solid rgb(170, 170, 170);;
+.filterBarSelect{
+    font-size: 15px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(170, 170, 170);
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.filterBarSelect:focus{
+   border-color: hsl(239, 84%, 67%);
+   box-shadow: 0 0 0 3px hsl(228, 96%, 89%);
 }
 
 .productGrid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 20px;
 }
 
 .productCard{
-    padding: 16px;
+    padding: 18px;
     border: 1px solid hsl(0, 0%, 87%);
-    border-radius: 8px;
+    border-radius: 14px;
     background: hsl(0, 0%, 100%);
-    transition: all 0.2s ease;
+    transition: 0.25s ease;
     cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .productCard:hover{
-    background: #f0f0f0;
-    transform: scale(1.1);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.productCard h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: hsl(221, 39%, 11%);
+  font-weight: 600;
 }
 
 .productPrice{
     font-weight: bold;
-    margin: 6px 0;
+    font-size: 17px;
+    color: hsl(243, 75%, 59%);
+    margin-bottom: 5px;
 }
 
 .productCategory{
@@ -69,20 +98,24 @@
 
 .stock{
     display: inline-block;
-    padding: 4px 8px;
-    font-size: 12px;
-    border-radius: 4px;
-    margin-top: 6px;
+    padding: 4px 10px;
+    font-size: 13px;
+    background: rgb(237, 241, 255);
+    color: hsl(243, 75%, 59%);
+    border-radius: 6px;
+    margin-bottom: 10px;
 }
 
 .Available{
     background: hsl(122, 39%, 49%);
     color: hsl(0, 0%, 100%);
+    font-weight: 500;
 }
 
 .notAvailable{
     background: hsl(0, 65%, 51%);
     color: hsl(0, 0%, 100%);
+    font-weight: 500;
 }
 
 .loadingState{
@@ -94,6 +127,9 @@
 .emptyState{
     text-align: center;
     font-size: 18px;
-    margin-top: 40px;
+    padding: 40px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 12px;
     color: hsl(0, 0%, 27%);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
