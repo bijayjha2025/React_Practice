@@ -7,8 +7,11 @@ function JokeGenerator(){
 
     const LoadJoke = async()=>{
         setLoading(true);
-        
-    }
+        const response = await fetch("https://official-joke-api.appspot.com/random_joke");
+        const data= await response.json();
+        setJoke(data);
+        setLoading(false);
+    };
 
 
     useEffect (()=>{
