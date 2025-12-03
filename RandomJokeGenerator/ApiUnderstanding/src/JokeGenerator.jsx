@@ -19,19 +19,19 @@ function JokeGenerator(){
     }, []);
 
     return(
-        <div>
-            <h2>Practing API Fetching.</h2>
-            <h3>Random Joke Loader</h3>
+        <div className='mainContainer'>
+            <div className='contentCard'>
+            <h3 className='contentTitle'><u>Random Joke Loader</u></h3>
 
             { loading ? (
-                <p>Loading joke....</p>): (
+                <p className='loadingText'>Loading joke....</p>): (
                     <div>
-                        <h3>{joke.setup}</h3>
-                        <p><strong>{joke.punchline}</strong></p>
+                        <h3 className='jokeSetUp'>{joke.setup}</h3>
+                        <p className='punchLine'><strong>{joke.punchline}</strong></p>
                     </div>
                 )}
-
-            <button onClick={LoadJoke}>Load Joke</button>
+                </div>
+            <button className='loadButton' onClick={LoadJoke}>Load Joke</button>
         </div>
     );
 }

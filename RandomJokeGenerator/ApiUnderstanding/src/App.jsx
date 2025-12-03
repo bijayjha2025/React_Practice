@@ -1,5 +1,6 @@
 
 import JokeGenerator from "./JokeGenerator.jsx"
+import './App.css'
 
 function App() {
 

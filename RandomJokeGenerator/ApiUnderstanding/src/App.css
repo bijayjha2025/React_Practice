@@ -1,0 +1,72 @@
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #80a8f7, rgb(112, 249, 112));
+    padding: 20px;
+
+}
+
+.contentCard{
+    background: hsl(0, 69%, 92%);
+    padding: 30px 40px;
+    width: 400px;
+    border-radius: 14px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.contentCard:hover {
+  transform: scale(1.01);
+}
+
+.contentTitle{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: hsl(0, 0%, 20%);
+    font-weight: 700;
+}
+
+.jokeSetUp h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 13%);
+}
+
+.punchLine{
+    font-size: 18px;
+    font-weight: bold;
+    color: hsl(226, 71%, 40%);
+}
+
+.loadingText {
+  font-size: 18px;
+  font-style: italic;
+  color: hsl(0, 0%, 33%);
+}
+
+.loadButton {
+  background: hsl(221, 96%, 64%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.25s ease;
+}
+
+.loadButton:hover {
+  background: hsl(224, 64%, 33%);
+  transform: translateY(-2px);
+}
+
+.loadButton:active {
+  transform: scale(0.95);
+}
