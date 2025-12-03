@@ -6,7 +6,8 @@ function JokeGenerator(){
     const [loading, setLoading] = useState(true);
 
     const LoadJoke = async()=>{
-        setLoading(true)
+        setLoading(true);
+        
     }
 
 
