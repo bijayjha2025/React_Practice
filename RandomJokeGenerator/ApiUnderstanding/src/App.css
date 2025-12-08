@@ -63,7 +63,7 @@
 }
 
 .loadButton:hover {
-  background: hsl(224, 64%, 33%);
+  background: #1e3a8a;
   transform: translateY(-2px);
 }
 

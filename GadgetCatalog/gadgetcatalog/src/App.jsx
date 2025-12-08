@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-     <NavBar>
+     <NavBar/>
       <Routes>
        <Route path='/' element={< Home/>}/>
        <Route path='/gadgets' element={< GadgetList />}/>
@@ -22,7 +22,6 @@ function App() {
        <Route path='/about' element={< About />}/>
        <Route path='/contact' element={< Contact/>}/>
       </Routes>
-     </NavBar>
     </>
 
   )
