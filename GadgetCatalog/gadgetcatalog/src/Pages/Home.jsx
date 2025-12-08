@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 function Home(){
     return(
-        <div>
+        <div className="gadgetContainer">
             {
                 gadgets.map((g)=> (
-                    <div key={g.id}>
+                    <div key={g.id} className="gadgetCard">
                         <img src={g.name} alt={g.name}/>
                         <h2>{g.name}</h2>
                         <p>{g.brand}</p>

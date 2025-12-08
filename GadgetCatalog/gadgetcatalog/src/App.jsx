@@ -9,6 +9,7 @@ import GadgetDetails from './Pages/GadgetDetails.jsx'
 import About from './Pages/About.jsx'
 import Contact from './Pages/Contact.jsx'
 
+import './App.css'
 
 function App() {
 
