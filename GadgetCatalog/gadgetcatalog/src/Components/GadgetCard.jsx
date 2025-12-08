@@ -10,7 +10,7 @@ function GadgetCard({gadget}){
             <p>Brand: {gadget.brand}</p>
             <p>Price:{gadget.price}</p>
 
-            <Link to={'/gadgets/${gadget.id}'}>View Details</Link>
+            <Link to={`/gadgets/${gadget.id}`}>View Details</Link>
 
         </div>
 
