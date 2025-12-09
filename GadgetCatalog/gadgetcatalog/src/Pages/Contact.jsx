@@ -2,10 +2,10 @@
 function Contact() {
   return (
     <div className="pageContainer">
-      <div className="contactContent">
+      <div className="contactSectionContent">
         <h1>Contact Us</h1>
         
-        <p>Have questions or need assistance? We would love to hear from you!</p>
+        <p className="contactHeading">Have questions or need assistance? We are here to help you.</p>
 
         <div className="contactInfo">
           <div className="contactItem">
@@ -30,7 +30,7 @@ function Contact() {
         </div>
 
         <div className="contactForm">
-          <h2>Send us a Message</h2>
+          <h2 className="contactHeading">Send us a Message</h2>
           <form>
             <input type="text" placeholder="Your Name" required />
             <input type="email" placeholder="Your Email" required />
