@@ -8,7 +8,7 @@ function GadgetCard({gadget}){
 
             <h3>{gadget.name}</h3>
             <p>Brand: {gadget.brand}</p>
-            <p>Price:{gadget.price}</p>
+            <p>Price: {gadget.price}</p>
 
             <Link to={`/gadgets/${gadget.id}`}>View Details</Link>
 

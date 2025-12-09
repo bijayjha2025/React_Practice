@@ -13,7 +13,6 @@ function GadgetDetails(){
 
     return(
         <div className="detailsContainer">
-        { gadget ? (
                 <div>
                     <img src={gadget.image} alt={gadget.name}/>
 
@@ -25,7 +24,6 @@ function GadgetDetails(){
 
                     <button onClick={()=> navigate(-1)} className="backButton">Back</button>
                 </div>
-            ) : ( <p>Gadget not found.</p> ) }
         </div>
     );
 }

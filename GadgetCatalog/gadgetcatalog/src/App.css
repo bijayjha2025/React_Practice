@@ -6,10 +6,8 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* CSS for Home Page */
 .homeContainer{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
   padding: 20px;
 }
 
@@ -54,6 +52,8 @@
   background-color: rgb(87, 87, 255);
 }
 
+/* CSS for ProductDetails */
+
 .detailsContainer{
   max-width: 700px;
   margin: 30px auto;
@@ -93,6 +93,7 @@
   background: linear-gradient(270deg, rgb(120, 120, 228), rgb(115, 213, 115));
 }
 
+/* CSS for NavBar */
 .navBar {
   display: flex;
   gap: 20px;
@@ -113,6 +114,7 @@
   color: #d41010;
 }
 
+/* CSS for GadgetList */ 
 .pageContainer{
   padding: 20px;
 }
@@ -131,6 +133,7 @@
   padding: 20px;
 }
 
+/* CSS for GadgetCard */
 .gadgetCard {
   border: 1px solid hsl(0, 1%, 26%);
   padding: 15px;
@@ -172,6 +175,7 @@
   background-color: rgb(87, 87, 255);
 }
 
+/* CSS for HeroSection Page */
 .heroSectionContainer {
   width: 100%;
   padding: 60px 30px;
