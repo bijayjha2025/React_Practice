@@ -4,10 +4,10 @@ import GadgetCard from '../Components/GadgetCard.jsx'
 
 function GadgetList(){
     return(
-        <div>
+        <div className='pageContainer'>
         <h1>Gadget Catalog</h1>
 
-        <div>
+        <div className='gadgetGrid'>
             {gadgets.map(gadget => (
                 <GadgetCard key={gadget.id} gadget={gadget}/>
             ))}

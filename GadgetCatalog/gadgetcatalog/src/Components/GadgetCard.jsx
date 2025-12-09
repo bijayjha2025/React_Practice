@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function GadgetCard({gadget}){
     return(
-        <div>
+        <div className='gadgetCard'>
             <img src={gadget.image} alt={gadget.name}/>
 
             <h3>{gadget.name}</h3>

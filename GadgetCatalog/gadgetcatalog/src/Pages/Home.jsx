@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 function Home(){
     return(
-        <div className="gadgetContainer">
+        <div className="homeContainer">
             {
-                gadgets.map((g)=> (
-                    <div key={g.id} className="gadgetCard">
-                        <img src={g.name} alt={g.name}/>
+                gadgets.slice(0, 6).map((g)=> (
+                    <div key={g.id} className="homeCard">
+                        <img src={g.image} alt={g.name}/>
                         <h2>{g.name}</h2>
                         <p>{g.brand}</p>
                         <p><strong>{g.price}</strong></p>
