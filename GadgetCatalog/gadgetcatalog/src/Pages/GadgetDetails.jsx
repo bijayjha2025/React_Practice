@@ -9,8 +9,10 @@ function GadgetDetails(){
     const gadget = gadgets.find((g)=> g.id === parseInt(id));
     const navigate = useNavigate();
 
+    if (!gadget) return <p style={{ padding: "20px", textAlign: "center" }}>Gadget not found.</p>;
+
     return(
-        <div>
+        <div className="detailsContainer">
         { gadget ? (
                 <div>
                     <img src={gadget.image} alt={gadget.name}/>
@@ -21,7 +23,7 @@ function GadgetDetails(){
                     <p><strong>Price:</strong>{gadget.price}</p>
                     <p>{gadget.description}</p>
 
-                    <button onClick={()=> navigate(-1)}>Back</button>
+                    <button onClick={()=> navigate(-1)} className="backButton">Back</button>
                 </div>
             ) : ( <p>Gadget not found.</p> ) }
         </div>
