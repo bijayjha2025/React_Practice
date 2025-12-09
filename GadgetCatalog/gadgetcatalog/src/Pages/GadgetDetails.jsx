@@ -19,9 +19,9 @@ function GadgetDetails(){
 
                     <h2>{gadget.name}</h2>
 
-                    <p><strong>Brand:</strong>{gadget.brand}</p>
-                    <p><strong>Price:</strong>{gadget.price}</p>
-                    <p>{gadget.description}</p>
+                    <p><strong>Brand: </strong>{gadget.brand}</p>
+                    <p><strong>Price: </strong>{gadget.price}</p>
+                    <p style={{ marginTop: "10px" }}>{gadget.description}</p>
 
                     <button onClick={()=> navigate(-1)} className="backButton">Back</button>
                 </div>
