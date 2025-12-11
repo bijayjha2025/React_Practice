@@ -1,4 +1,6 @@
 
+import { UseAuth } from "../Hooks/UseAuth";
+
 function UserProfile(){
     return(
         <>
