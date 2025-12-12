@@ -97,3 +97,59 @@ body {
     animation: fadeIn 0.8s ease-out;
 }
 
+.designIcon{
+    font-size: 28px;
+    animation: rotate 2s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+.designText{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbarActions{
+    animation: fadeIn 0.8s ease-out 0.2s backwards;
+}
+
+.userSection{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.userGreeting{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    animation: slideInRight 0.6s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.greetingIcon{
+    font-size: 20px;
+}
+
+
