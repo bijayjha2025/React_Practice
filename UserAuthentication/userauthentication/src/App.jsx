@@ -11,7 +11,7 @@ function App() {
     <div className = "appContainer">
       <NavBar />
       <Home />
-      {isLoggedIn ? <Dashboard /> : <p>Please login to access dashboard</p>}
+      {isLoggedIn ? <Dashboard /> : <p className="loginInstruction">Please login to access dashboard</p>}
     </div>
   );
 }
