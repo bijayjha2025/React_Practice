@@ -328,3 +328,27 @@ body {
   color: gray;
   font-weight: 600;
 }
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .userSection {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profileHeading {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profileItem {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
