@@ -1,0 +1,33 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(to left, rgb(208, 250, 208), rgb(186, 186, 249));
+  color: hsl(0, 0%, 13%);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Styling for App */
+.appContainer{
+    width: 100%;
+    background: rgb(250, 242, 242);
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.appContainer h1, h2{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
