@@ -26,8 +26,47 @@ body {
     transition: 0.3s ease;
 }
 
-.appContainer h1, h2{
+.appContainer h1, .appContainer h2{
     font-weight: 600;
     margin-bottom: 15px;
 }
 
+/* Home Page */
+.homePage{
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0};
+    to {opacity: 1};
+}
+
+.homePageTitle{
+    font-size: 36px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #7c94fc 0%, #8259ab 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    animation: slideInUp 0.8s ease-out;
+}
+
+@keyframes slideInUp{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.homePageContent{
+    font-size: 18px;
+    color: hsl(0, 0%, 40%);
+    animation: slideInUp 0.8s ease-out 0.2s backwards;
+}
