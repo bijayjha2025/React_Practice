@@ -1,9 +1,9 @@
 
-import { useAuth } from "../Hooks/UseAuth";
+import { UseAuth } from "../Hooks/UseAuth";
 import UserProfile from "../Components/UserProfile.jsx";
 
 function Dashboard() {
-  const { isLoggedIn } = useAuth();
+  const { isLoggedIn } = UseAuth();
 
   if (!isLoggedIn) return <p>Access Denied. Please log in.</p>;
 

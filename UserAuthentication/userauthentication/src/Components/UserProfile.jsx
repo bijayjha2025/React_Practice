@@ -2,7 +2,7 @@
 import { UseAuth } from "../Hooks/UseAuth";
 
 function UserProfile(){
-    const { user, isLoggedIn } = useAuth();
+    const { user, isLoggedIn } = UseAuth();
     
     if (!isLoggedIn) return <p>Please log in to see profile.</p>;
     

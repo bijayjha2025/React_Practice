@@ -2,7 +2,7 @@
 import { useState } from "react";
 import {AuthContext} from './AuthContext.jsx'
 
-function AuthProvider({props}){
+function AuthProvider({children}){
     const [user, setUser] = useState(null);
 
     const login = (name = "Max") =>{
@@ -25,7 +25,7 @@ function AuthProvider({props}){
 
     return(
         <AuthContext.Provider value={value}>
-            {props}
+            {children}
         </AuthContext.Provider>
     );
 }
