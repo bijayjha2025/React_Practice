@@ -5,11 +5,17 @@ import UserProfile from "../Components/UserProfile.jsx";
 function Dashboard() {
   const { isLoggedIn } = UseAuth();
 
-  if (!isLoggedIn) return <p>Access Denied. Please log in.</p>;
+  if (!isLoggedIn){
+    return (
+    <div className="accessDenied">
+      <p className="deniedText">Access Denied. Please log in.</p>
+    </div>
+    );
+  }
 
   return (
-    <div>
-      <h1>Dashboard</h1>
+    <div className="dashboardPage">
+      <h1 className="dashboardTitle">Dashboard</h1>
       <UserProfile />
     </div>
   );

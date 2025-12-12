@@ -5,18 +5,27 @@ function NavBar(){
     const {user, login, logout, isLoggedIn} = UseAuth();
 
     return(
-        <nav>
-            <strong>My App</strong>
-
+        <nav className="navbar">
+          <div className="navbarDesign">
+            <span className="designIcon">🔐</span>
+            <strong className="designText">My App</strong>
+            </div>
+          
+           <div className="navbarActions">
             {isLoggedIn ? (
-        <>
-          <span>Hello, {user.name}</span>
-          <button onClick={logout}>Logout </button>
-        </>
-      ) : (
-        <button onClick={() => login("Max")}>Login</button>
-      )}
-        </nav>
+            <div className="userSection">
+            <span className="userGreeting">
+              <span className="greetingIcon">👋</span>
+              Hello, <strong>{user.name}</strong></span>
+            <button className ="logoutButton" onClick={logout}>
+              <span className="buttonText">Logout</span> 
+            </button>
+            </div>) : (
+            <button className="loginButton" onClick={() => login("Max")}>
+            <span className="buttonText">Login</span>
+            </button> )}
+          </div>
+      </nav>
     );
 }
 
