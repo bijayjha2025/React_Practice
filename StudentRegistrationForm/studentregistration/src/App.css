@@ -6,3 +6,32 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.formContainer{
+  background: rgb(227, 241, 247);
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+label{
+  display: block;
+  margin-top: 10px;
+}
+
+input{
+  width: 100%;
+  margin-top: 4px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+button{
+  margin-top: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}

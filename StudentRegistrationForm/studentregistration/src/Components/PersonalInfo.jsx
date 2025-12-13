@@ -3,7 +3,7 @@ import React from "react";
 
 const PersonalInfo = ({ formData, handleChange, nextStep }) => {
     return (
-        <div>
+        <div className="formContainer">
             <h2>Step 1: Personal Information</h2>
 
             <label>Full Name:</label>
