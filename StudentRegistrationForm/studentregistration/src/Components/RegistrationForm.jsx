@@ -10,7 +10,11 @@ const RegistrationForm = () => {
         name: "",
         email: "",
         phone: "",
-        dateofBirth: "" });
+        dateofBirth: "",
+        studentId: "",
+        department: "",
+        year: ""
+        });
 
         const handleChange= (e) =>{
             const {name, value} = e.target;
@@ -19,6 +23,10 @@ const RegistrationForm = () => {
 
         const nextStep = () =>{
             setStep(prevStep => prevStep + 1);
+        }
+
+        const prevStep = () =>{
+            setStep(prevStep => prevStep -1);
         }
     return(
         <div>
