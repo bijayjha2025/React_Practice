@@ -2,6 +2,7 @@
 import React, {useState} from 'react';
 import PersonalInfo from './PersonalInfo.jsx';
 import AcademicInfo from './AcademicInfo.jsx';
+import AccountSetup from './AccountSetup.jsx';
 
 const RegistrationForm = () => {
 
@@ -14,7 +15,10 @@ const RegistrationForm = () => {
         dateofBirth: "",
         studentId: "",
         department: "",
-        year: ""
+        year: "",
+        username: "",
+        password: "",
+        confirmPassword: ""
         });
 
         const handleChange= (e) =>{
@@ -33,6 +37,7 @@ const RegistrationForm = () => {
         <div>
             { step === 1 && ( <PersonalInfo formData={formData} handleChange={handleChange} nextStep={nextStep}/>)}
             { step === 2 && ( <AcademicInfo formData={formData} handleChange={handleChange} nextStep={nextStep} prevStep={prevStep}/>)}
+            { step === 3 && ( <AccountSetup formData={formData} handleChange={handleChange} nextStep={nextStep} prevStep={prevStep}/>)}
         </div>
     );
 }
