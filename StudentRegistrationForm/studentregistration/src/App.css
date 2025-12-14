@@ -6,6 +6,11 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+body, html{
+  height: 100%;
+  margin: 0;
+}
+
 .formContainer{
   background: rgb(227, 241, 247);
   width: 420px;
@@ -97,4 +102,32 @@ h3{
 p{
   margin-bottom: 8px;
   font-size: 16px;
+}
+
+.appBackground{
+  min-height: 100vh;
+  width: 100%;
+
+  background-image: url('./public/Images/backgroundImage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.appBackground::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+.appContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
 }

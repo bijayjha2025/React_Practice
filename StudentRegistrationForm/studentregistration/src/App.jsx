@@ -5,10 +5,11 @@ import RegistrationForm from './Components/RegistrationForm'
 function App() {
 
   return (
-    <>
-    <RegistrationForm/>
-
-    </>
+    <div className='appBackground'>
+      <div className='appContent'>
+         <RegistrationForm/>
+      </div>
+    </div>
   )
 }
 
