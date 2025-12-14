@@ -22,7 +22,7 @@ const AccountSetup = ({ formData, handleChange, nextStep, prevStep }) => {
     };
 
     return(
-        <div>
+        <div className="formContainer">
             <h2>Step 3: Account Setup</h2>
 
             <div className="field">
@@ -40,9 +40,9 @@ const AccountSetup = ({ formData, handleChange, nextStep, prevStep }) => {
                 <input type="password" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} placeholder="Re-enter Password"/>
             </div>
 
-            { error && <p>{error}</p> }
+            { error && <p className="error">{error}</p> }
 
-            <div>
+            <div className="buttons">
                 <button onClick={prevStep}>Back</button>
                 <button onClick={handleNext}>Next</button>
             </div>
