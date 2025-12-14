@@ -38,11 +38,12 @@
   border: 1px solid hsl(0, 0%, 73%);
   border-radius: 6px;
   font-size: 14px;
+  outline: none;
 }
 
 .field input:focus, .field select:focus{
-  outline: none;
   border-color: hsl(212, 72%, 59%);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
 .buttons{
@@ -52,11 +53,12 @@
 }
 
 .buttons button{
-  padding: 8px 18px;
+  padding: 8px 16px;
   cursor: pointer;
   border: none;
-  border-radius: 6px;
-  font-size: 14px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
 }
 
 .buttons button:first-child{
@@ -70,10 +72,29 @@
 
 .buttons button:hover{
   opacity: 0.9;
+  background-color: hsl(211, 86%, 66%);
 }
 
 .error{
   color: red;
   font-size: 13px;
-  margin-top: 8px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+h2{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+p{
+  margin-bottom: 8px;
+  font-size: 16px;
 }

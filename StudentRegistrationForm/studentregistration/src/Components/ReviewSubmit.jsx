@@ -3,7 +3,7 @@ import React from "react";
 
 const ReviewSubmit = ({ formData, prevStep, handleSubmit }) => {
     return(
-        <div>
+        <div className="formContainer">
             <h2>Review and Submit</h2>
 
             <h3>Personal Information</h3>
@@ -21,7 +21,7 @@ const ReviewSubmit = ({ formData, prevStep, handleSubmit }) => {
             <p><strong>Username:</strong>{formData.username}</p>
             <p><strong>Password:</strong> ******** (hidden)</p>
 
-            <div>
+            <div className="buttons">
                 <button onClick={prevStep}>Back</button>
                 <button onClick={handleSubmit}>Submit</button>
             </div>
